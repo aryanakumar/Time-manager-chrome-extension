@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Alarm v1",
+  "description": "This extension alarms.",
+  "version": "1.0",
+
+  "permissions": [
+    "alarms",
+	"tabs"
+  ],
+  "content_scripts":[
+{
+"matches":[
+"https://*.facebook.com/*", 
+"https://*.youtube.com/*",
+"https://*.twitter.com/*",
+"https://*.instagram.com/*"
+
+
+],
+"js":["content.js"]
+}
+],
+
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    
+    
+  }
+}
